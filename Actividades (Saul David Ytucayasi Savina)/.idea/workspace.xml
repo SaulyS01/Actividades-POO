@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d170fe9-cb13-439b-a614-90aec36c0e53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Sesión-02/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sesión-02/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/Crud.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud/Crud.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/a/Conn.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud/a/Conn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/a/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud/a/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/a/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/crud/a/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crud/db2.db" beforeDir="false" afterPath="$PROJECT_DIR$/crud/db2.db" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1i6rTwJ4PZ2U8qfzVJaJDYjMGYW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollFromSource" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sesión-03" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d170fe9-cb13-439b-a614-90aec36c0e53" name="Default Changelist" comment="" />
+      <created>1601238893738</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601238893738</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1601238922454">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738/-1920.-325.1280.689@0.0.1366.738" timestamp="1601238922454" />
+  </component>
+</project>
