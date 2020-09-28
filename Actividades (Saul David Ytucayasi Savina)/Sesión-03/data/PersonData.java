@@ -4,35 +4,24 @@ import entities.Person;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 
 public class PersonData {
 
     List<Person> listP = new ArrayList<Person>();
-
+    int id = 1;
     public void create(Person person) {
-        Scanner sc = new Scanner(System.in);
-        PersonData personData = new PersonData();
-        System.out.print("Ingrese el nombre: ");
-        person.setName(sc.nextLine());
-        System.out.print("Ingrese su edad: ");
-        person.setAge(sc.nextInt());
-        System.out.print("Ingrese si id: ");
-        person.setId(sc.nextInt());
+        person.setId(id++);
         listP.add(person);
-        System.out.println();
     }
     public void getList(){
         for (Person person: listP) {
-            System.out.println("El nombre es: " + person.getName() + "\t" + "La edad es: " + person.getAge() + "\t" +
-                    "El id es: " + person.getId());
+            System.out.println(person.getId() + "\t"  + person.getAge() + "\t" + person.getName());
         }
     }
     public void getListElement(int id) {
         for (Person person: listP) {
             if (person.getId() == id) {
-                System.out.println("El nombre es: " + person.getName() + "\t" + "La edad es: " + person.getAge() + "\t" +
-                        "El id es: " + person.getId());
+                System.out.println(person.getId() + "\t"  + person.getAge() + "\t" + person.getName());
             }
         }
     }
@@ -42,8 +31,18 @@ public class PersonData {
             Person person = iterator.next();
             if (person.getId() == id) {
                 iterator.remove();
-                System.out.println("Se eliminó el elemento");
             }
         }
+    }
+    public Person update(int id) {
+        Person p = null;
+        for (Person person: listP) {
+            if (person.getId() == id) {
+                p = person;
+            }else {
+                return null;
+            }
+        }
+        return p;
     }
 }
