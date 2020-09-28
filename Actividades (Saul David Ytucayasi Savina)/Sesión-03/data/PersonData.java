@@ -34,15 +34,13 @@ public class PersonData {
             }
         }
     }
-    public Person update(int id) {
-        Person p = null;
+    public void update(int id, String name, int age) {
         for (Person person: listP) {
             if (person.getId() == id) {
-                p = person;
+                System.out.println("Ya se cambió");
             }else {
-                return null;
+                System.out.println("No se cambió correctamente");
             }
         }
-        return p;
     }
 }
