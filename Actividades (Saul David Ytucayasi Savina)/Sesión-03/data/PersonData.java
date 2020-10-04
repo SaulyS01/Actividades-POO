@@ -13,17 +13,20 @@ public class PersonData {
         person.setId(id++);
         listP.add(person);
     }
-    public void getList(){
-        for (Person person: listP) {
-            System.out.println(person.getId() + "\t"  + person.getAge() + "\t" + person.getName());
-        }
+    public List<Person> getList(){
+        return listP;
     }
-    public void getListElement(int id) {
-        for (Person person: listP) {
+    public Person getListElement(int id) {
+        Iterator<Person> iterator = listP.iterator();
+        int index = 0;
+        while (iterator.hasNext()) {
+            Person person = iterator.next();
             if (person.getId() == id) {
-                System.out.println(person.getId() + "\t"  + person.getAge() + "\t" + person.getName());
+                return listP.get(index);
             }
+            index++;
         }
+        return null;
     }
     public void remove(int id) {
         Iterator<Person> iterator = listP.iterator();
@@ -34,13 +37,14 @@ public class PersonData {
             }
         }
     }
-    public void update(int id, String name, int age) {
+    public void update(Person d) {
+        int index = 0;
         for (Person person: listP) {
-            if (person.getId() == id) {
-                System.out.println("Ya se cambió");
-            }else {
-                System.out.println("No se cambió correctamente");
+            if (person.getId() == d.getId()) {
+                listP.set(index, d);
+                System.out.println("Correcto");
             }
+            index++;
         }
     }
 }
