@@ -39,7 +39,9 @@ public class Main {
                     System.out.print("Ingrese el id del objeto: ");
                     try {
                         int idVar = sc.nextInt();
-                        personData.getListElement(idVar);
+                        Person person3 = personData.getListElement(idVar);
+                        System.out.println(person3.getId() + "\t"  + person3.getAge() + "\t" + person3.getName());
+                        sc.nextLine();
                     }catch (Exception e) {
                         System.out.println("Ingrese un número entero");
                     }
@@ -52,12 +54,11 @@ public class Main {
                 case "4":
                     System.out.print("Ingrese el id: ");
                     try {
-                        
-                        Person d = personData.getListElement(sc.nextInt());
-                        System.out.println(person.getId() + "\t"  + person.getAge() + "\t" + person.getName());
+                        personData.remove(sc.nextInt());
                     }catch (Exception e) {
                         System.out.println("Ingrese un número entero");
                     }
+                    sc.nextLine();
                     break;
                 case "5":
                     System.out.print("Ingresa el id: ");
@@ -67,7 +68,6 @@ public class Main {
                         person1 = personData.getListElement(idVar);
                     }catch (Exception e) {
                         System.out.println("Ingresa un número entero");
-
                     }
                     sc.nextLine();
                     if (person1 != null) {
@@ -80,15 +80,13 @@ public class Main {
                             System.out.println("Ingresa un número entero");
                         }
                             personData.update(person1);
+                        sc.nextLine();
                     }else {
                         System.out.println("El objeto no existe");
                     }
                     break;
                 case "6":
                     bool = false;
-                    break;
-                default:
-                    System.out.println("\nIngresa nuevamente");
                     break;
             }
         }while (bool);
