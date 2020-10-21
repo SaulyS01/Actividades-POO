@@ -1,11 +1,12 @@
 package main;
 
-import data.Coon;
+import 
 import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class MainCoon {
     public static void main(String[] args) {
+        
         Coon.connectSQLite();
         String sql = "SELECT * FROM persons";
         try {

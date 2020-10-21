@@ -1,4 +1,4 @@
-package main;
+/*package main;
 
 import data.PersonData;
 import entities.Person;
@@ -90,5 +90,5 @@ public class Main {
                     break;
             }
         }while (bool);
-    }*/
-}
+    }
+} */

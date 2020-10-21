@@ -9,7 +9,7 @@ public class Coon {
         Connection conn = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            String dbURL = "jdbc:sqlite:contactos.bd?foreign_keys=on;";
+            String dbURL = "jdbc:sqlite:contactos_db.bd?foreign_keys=on;";
             conn = DriverManager.getConnection(dbURL);
             System.out.println("Okey en la conexion");
         } catch (ClassNotFoundException | SQLException e) {
