@@ -21,39 +21,46 @@ public class NewJFrame extends JFrame {
         
         int i, x, y, r, alto, ancho, calc;
         Color color;
-        //N = 300;
-        //vector = new Figura[N];
         h = this.getHeight();
         w = this.getWidth();
         listA = new ArrayList<Figura>();
         
         for(i = 0; i < 300; i++) { 
-            int [] vacXa = new int[3];
-            int [] vacYa = new int[3];
+            
+            int [] vacXa;
+            int [] vacYa;
+            
             x = (int)(Math.random() * w); //la pisición de tu figura, origen
             y = (int)(Math.random() * h);
             color = new Color((int)(Math.random() * 250), (int)(Math.random() * 250), (int)(Math.random() * 250));
             if (i >= 0 && i < 100) {
-                r = (int)(Math.random() * 30);
+                r = (int)(Math.random() * 60);
                 //vector[i] = new Circulo(x, y, r, color);
                 listA.add(new Circulo(x, y, r, color));
             } else if (i >= 100 && i < 110) {
+                vacXa = new int[3];
+                vacYa= new int[3];
                 for (calc = 0; calc < 3; calc++) {
-                    vacXa [calc] = (int)((x * Math.random()) + i);
-                    vacYa [calc] = (int)((y * Math.random()) + i);
-                  
+                    vacXa [calc] = (int)((x * Math.random()) + i * 0.2);
+                    vacYa [calc] = (int)((y * Math.random()) + i * 0.2);
                 }
                 //vector[i] = new Triangulo(vacXa, vacYa, color);
                 listA.add(new Triangulo(vacXa, vacYa, color));
-            } else {
-                alto = (int)(Math.random() * 30);
-                ancho = (int)(Math.random()* 30);
+            } else if (i >= 110 && i < 200) {
+                alto = (int)(Math.random() * 50);
+                ancho = (int)(Math.random()* 50);
+                listA.add(new Ovalo(x, y, ancho, alto, color));
+            } else if (i >= 200 && i < 250) {
+                String s = "Saul";
+                listA.add(new Palabra(x, y, s, color));
+            }else {
+                alto = (int)(Math.random() * 50);
+                ancho = (int)(Math.random()* 50);
                 //vector[i] = new Rectangulo(x, y, alto, ancho, color);
                 listA.add(new Rectangulo(x, y, alto, ancho, color));
             }
         }
     }
-
     public void paint(Graphics g) {
         super.paint(g);
         g.setColor(Color.black);
